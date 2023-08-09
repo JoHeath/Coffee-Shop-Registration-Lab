@@ -1,0 +1,19 @@
+﻿@model User
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Thank you for registering: @Model.firstName @Model.lastName</h1>
+<p style="color: red">Your order name is @Model.firstName.  You are the 100th customer and your coffee and donuts will be ready in two hours. Thank you for your patronage.</p>
+<p></p>
+@{
+    if (Model.privacy)
+    {
+        <p>Thank you for accepting the privacy policy.</p>
+    }
+    else
+    {
+        <p>You did not accept the privacy policy.</p>
+    }
+}

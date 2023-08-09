@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form asp-method ="post" asp-action="ThankYou">
+    <p>Enter your first name</p>
+    <input type="text" name="firstName"/>
+    <p>Enter your last name</p>
+    <input type="text" name="lastName"/>
+    <p>Enter your Email</p>
+    <input type="email" name="userEmail"/>
+    <p>Enter your password must be a minimum of 6characters and contain at least 1 number and 1 capital letter.</p>
+    <input type="password" pattern="(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])\S{6,}" required name="userPassword" />
+    <p>Do you accept the privacy policy?<input type="checkbox" name="privacy" value=" true"/></p>
+    
+    <input type="submit"/>
+</form>
